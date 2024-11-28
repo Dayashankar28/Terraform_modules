@@ -9,3 +9,10 @@ module "root_create_dynamodb_locking" {
   dynamodb_name = var.root_dynamodb_name
   hash_key = var.root_hash_key
 }
+
+module "create_ec2" {
+  source = "./modules/ec2creation"
+  instance_type = "t2.micro"
+  key_name = "teraform-key.pem"
+  keypath = "./keys/teraform-key.pem"
+}
