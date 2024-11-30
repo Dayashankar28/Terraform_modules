@@ -6,13 +6,13 @@ terraform {
     }
   }
 
-  # backend "s3" {
+  backend "s3" {
 
-  #     bucket = "daya-s3-backend-learing44"
-  #     key = "state/terraform.tfstate"
-  #     region = "ap-south-1"
-  #     dynamodb_table = "daya-backend-locking44"
+      bucket = "daya-s3-bakend-bucket"
+      key = "state/terraform.tfstate"
+      region = "ap-south-1"
+      dynamodb_table = "daya-dynamodb-backend-lock"
         
-  #       }
+        }
 
 }
