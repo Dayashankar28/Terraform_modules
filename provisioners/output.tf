@@ -1,5 +1,5 @@
 output "IGW_NAME" {
-  value = module.create_vpc.igw-name
+  value = module.create_vpc.igw_name
 }
 
 output "VPC_NAME" {
