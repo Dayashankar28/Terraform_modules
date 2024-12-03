@@ -19,3 +19,8 @@ module "file-exec" {
   source_path = var.root_source_path
   destination_path = var.root_destination_path
 }  
+
+module "local-exec" {
+  source = "github.com/Dayashankar28/terraform-modules-daya//modules/local-exec"
+  ec2_public_ip = module.create_ec2.ec2_public_ip
+}
