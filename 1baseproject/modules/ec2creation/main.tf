@@ -33,10 +33,12 @@ resource "aws_instance" "create_ec2" {
   ami = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   key_name = aws_key_pair.deployer.key_name
-  security_groups = [data.aws_security_group.default.name]
+  vpc_security_group_ids = ["vpc-0476d4dbb3b95edd1"]
 
   tags = {
     Name = "tf-example"
   }
 
 }
+
+

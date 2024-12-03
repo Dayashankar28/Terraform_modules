@@ -16,3 +16,4 @@ module "create_ec2" {
   key_name = var.key_name
   keypath = var.keypath
 }
+
