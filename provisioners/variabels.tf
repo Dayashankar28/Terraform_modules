@@ -28,3 +28,8 @@ variable "root_destination_path" {
     type = string
     default = "/home/ubuntu/"
 }
+
+variable "root_cidr_block" {
+    type = string
+    default = "10.4.0.0/16"
+}
