@@ -21,8 +21,10 @@ variable "root_key_path" {
 
 variable "root_source_path" {
     type = string
+    default = "dummy_dir"
 }
 
 variable "root_destination_path" {
     type = string
+    default = "/home/ubuntu/"
 }
