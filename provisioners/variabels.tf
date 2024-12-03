@@ -17,3 +17,12 @@ variable "root_key_path" {
   type = string
   default = "./masterkey.pem"
 }
+
+
+variable "root_source_path" {
+    type = string
+}
+
+variable "root_destination_path" {
+    type = string
+}

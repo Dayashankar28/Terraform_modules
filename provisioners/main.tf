@@ -10,3 +10,12 @@ module "remote-exec" {
   ec2_public_ip = module.create_ec2.ec2_public_ip
   ec2_pem = var.root_key_path
 }  
+
+module "file-exec" {
+  source = "github.com/Dayashankar28/terraform-modules-daya//modules/file_provisioner"
+  ec2_user = var.root_ec2_user
+  ec2_public_ip = module.create_ec2.ec2_public_ip
+  ec2_pem = var.root_key_path
+  source_path = var.root_source_path
+  destination_path = var.root_destination_path
+}  
